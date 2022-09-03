@@ -1,0 +1,32 @@
+InsertionSortProblem Solve
+
+22,27,16,2,18,6 > Insertion Sort
+
+1.Sort list steps
+2.BIG-O shows
+3.Show Time Complexity : Average , worst , best
+4.18 is add where in time complexity.
+----------------------------------------------------------------
+1. 
+[22,27,16,2,18,6] 
+[2,27,16,22,18,6] 
+[2,6,16,22,18,27] 
+[2,6,16,18,22,27]
+
+2.    BIG-O Notations : n2
+3.    Time Complexity ;
+        Best case       : 2
+        Average case    : 16,18
+        Worst case      : 27
+4.      18 is in the worst case categories.
+----------------------------------------------------------------
+InsertionSortProblem Solve
+
+7,3,5,8,2,9,4,15,6 > Insertion Sort list first 4 steps.
+
+Sort list steps
+1. 
+[7,3,5,8,2,9,4,15,6] 
+[2,3,5,8,7,9,4,15,6] 
+[2,3,4,8,7,9,5,15,6] 
+[2,3,4,5,7,9,8,16,6]
