@@ -121,4 +121,45 @@ print(dic2)
 dic2.removeAll()                                    // Sözlükten tüm değerleri silmeye yarar. 
 print(dic2)
 
+// Operants
 
+let a = 19
+var b = 5
+
+b = a                                               // Atama operatörü
+print(b)
+
+print(3+2)                                          // Aritmetik operatörler
+print(3-2)
+print(3/2)
+print(3*2)
+print(15%3)
+
+var c = 3
+c += 2                                              // Birleşik atama operatörleri += (topla ekle), -= , *=, /=
+print(c)
+
+print(7==7)                                         // Karşılaştırma operatörleri == , !=, < , >, >=, <= şeklindedir.
+
+"d" == "d" ? print("eşitlik dogrudur.") : print("eşitsizlik yanlış")
+// Tek satırlık karşılaştırma operatörü kullanımı.
+
+// Functions
+
+func toplama (){
+    var sayi1 = 3
+    var sayi3 = 5
+    
+    print(sayi1+sayi3)
+}
+toplama()
+
+func toplama2 (sayi2:Int,sayi4:Int){
+    print(sayi2+sayi4)
+}
+toplama2 (sayi2:6,sayi4:4)
+
+func toplama3 (sayi5:Int,sayi6:Int)->Int{
+    return sayi5+sayi6
+}
+print(toplama3 (sayi5:6,sayi6:5))
