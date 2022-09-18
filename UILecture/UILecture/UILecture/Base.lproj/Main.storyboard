@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UILecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoşgeldiniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQ1-Ni-kd0">
+                                <rect key="frame" x="39" y="82" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XTP-76-ve6">
+                                <rect key="frame" x="39" y="144" width="311" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVa-fC-IoM">
+                                <rect key="frame" x="39" y="193" width="311" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNx-YV-Igf">
+                                <rect key="frame" x="39" y="235" width="119" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş"/>
+                                <connections>
+                                    <action selector="buttonClickt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SuP-Zo-ZPh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XTP-76-ve6" firstAttribute="top" secondItem="AQ1-Ni-kd0" secondAttribute="bottom" constant="41" id="1P2-mE-jXu"/>
+                            <constraint firstItem="XTP-76-ve6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2BY-j5-cVY"/>
+                            <constraint firstItem="MVa-fC-IoM" firstAttribute="top" secondItem="XTP-76-ve6" secondAttribute="bottom" constant="15" id="5v3-Uk-2Zm"/>
+                            <constraint firstItem="UNx-YV-Igf" firstAttribute="top" secondItem="MVa-fC-IoM" secondAttribute="bottom" constant="8" id="7dF-J1-UFO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQ1-Ni-kd0" secondAttribute="trailing" constant="147" id="9fC-rz-b8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UNx-YV-Igf" secondAttribute="trailing" constant="232" id="9kM-1t-ieK"/>
+                            <constraint firstItem="AQ1-Ni-kd0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Fp5-P4-zdb"/>
+                            <constraint firstItem="XTP-76-ve6" firstAttribute="leading" secondItem="MVa-fC-IoM" secondAttribute="leading" id="YqB-pL-Uip"/>
+                            <constraint firstItem="AQ1-Ni-kd0" firstAttribute="leading" secondItem="XTP-76-ve6" secondAttribute="leading" id="bZJ-fn-636"/>
+                            <constraint firstItem="XTP-76-ve6" firstAttribute="trailing" secondItem="MVa-fC-IoM" secondAttribute="trailing" id="c0V-b1-7aY"/>
+                            <constraint firstItem="MVa-fC-IoM" firstAttribute="leading" secondItem="UNx-YV-Igf" secondAttribute="leading" id="l2h-Sa-cvu"/>
+                            <constraint firstItem="AQ1-Ni-kd0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="v0Y-pX-ei2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="AQ1-Ni-kd0" id="eMJ-km-bHO"/>
+                        <outlet property="textFieldKAdi" destination="XTP-76-ve6" id="IO8-i4-dPY"/>
+                        <outlet property="textFieldPass" destination="MVa-fC-IoM" id="Z5g-a1-N02"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="-34.123222748815166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
