@@ -8,18 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var textFieldKAdi: UITextField!
     @IBOutlet weak var textFieldPass: UITextField!
     
+    @IBOutlet weak var labelHata: UILabel!
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        labelHata.isHidden=true
     }
-
-
+    
+    
     @IBAction func buttonClickt(_ sender: Any) {
         label1.text = "Merhaba IOS"
         label1.textColor = UIColor.red
@@ -30,6 +33,20 @@ class ViewController: UIViewController {
         
         print("Password :\(textFieldPass.text ?? "Şifre girilmedi.") ")
         
+        if textFieldKAdi.text=="timucin",textFieldPass.isHidden{
+            textFieldPass.isHidden=false
+        } else {
+            
+            if textFieldKAdi.text != "timucin"{
+                labelHata.text="Kullanıcı Adı ve şifre hatalı."
+                labelHata.isHidden=false
+            } else if !(textFieldPass.isHidden),textFieldPass.text=="12345"{
+                activityIndicator.startAnimating()
+            } else {
+                labelHata.text = "Şifreniz hatalı yada boş"
+                labelHata.isHidden=false
+            }
+        }
     }
+    
 }
-
